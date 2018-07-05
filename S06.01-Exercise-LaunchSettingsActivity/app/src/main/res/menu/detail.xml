@@ -22,6 +22,12 @@
         android:title="@string/action_share"
         app:showAsAction="always"/>
 
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="2"
+        app:showAsAction="never"/>
+
     <!--TODO (5) Add a Settings option to the detail menu-->
 
 </menu>
