@@ -15,7 +15,8 @@
      limitations under the License.
 -->
 <!-- TODO (7) Make the SettingsFragment the root layout for SettingsActivity -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="SettingsFragment"
     android:id="@+id/weather_settings_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
