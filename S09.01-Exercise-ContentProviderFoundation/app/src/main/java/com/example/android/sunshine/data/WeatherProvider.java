@@ -129,7 +129,7 @@ public class WeatherProvider extends ContentProvider {
                         WeatherContract.WeatherEntry.TABLE_NAME,
                         projection,
                         WeatherContract.WeatherEntry.COLUMN_DATE+ " = ?",
-                        selectionArgs,
+                        selectionArguments,
                         null,
                         null,
                         sortOrder
