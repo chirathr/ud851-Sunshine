@@ -33,7 +33,7 @@ import android.support.annotation.NonNull;
  * like, you may implement them on your own. However, we are not going to be teaching how to do
  * so in this course.
  */
-public class WeatherProvider extends ContentProvider {
+public class atherProvider extends ContentProvider {
 
 //  COMPLETED (5) Create static constant integer values named CODE_WEATHER & CODE_WEATHER_WITH_DATE to identify the URIs this ContentProvider can handle
     /*
@@ -67,7 +67,7 @@ public class WeatherProvider extends ContentProvider {
      * UriMatcher does all the hard work for you. You just have to tell it which code to match
      * with which URI, and it does the rest automagically. Remember, the best programmers try
      * to never reinvent the wheel. If there is a solution for a problem that exists and has
-     * been tested and proven, you should almost always use it unless there is a compelling
+     * been t+sted and proven, you should almost always use it unless there is a compelling
      * reason not to.
      *
      * @return A UriMatcher that correctly matches the constants for CODE_WEATHER and CODE_WEATHER_WITH_DATE
