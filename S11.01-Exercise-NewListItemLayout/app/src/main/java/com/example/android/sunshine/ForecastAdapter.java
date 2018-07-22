@@ -129,6 +129,10 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
         forecastAdapterViewHolder.weatherDesc.setText(description);
         forecastAdapterViewHolder.weatherHigh.setText(SunshineWeatherUtils.formatTemperature(mContext, highInCelsius));
         forecastAdapterViewHolder.weatherLow.setText(SunshineWeatherUtils.formatTemperature(mContext, lowInCelsius));
+
+        forecastAdapterViewHolder.weatherImage.setImageResource(
+                SunshineWeatherUtils.getLargeArtResourceIdForWeatherCondition(weatherId)
+        );
     }
 
     /**
