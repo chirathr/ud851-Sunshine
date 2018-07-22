@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.56" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/weather_icon"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="Today, April 03" />
+
+        <!-- Icon indicating weather condition -->
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="163dp"
+            android:layout_height="163dp"
+            android:layout_marginTop="56dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintHorizontal_bias="0.541"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/horizontal_middle"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/art_clouds" />
+
+        <!-- Text that describes weather condition -->
+        <TextView
+            android:id="@+id/weather_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintLeft_toLeftOf="@+id/weather_icon"
+            app:layout_constraintRight_toRightOf="@+id/weather_icon"
+            app:layout_constraintTop_toBottomOf="@+id/weather_icon"
+            tools:text="Rainy" />
+
+        <TextView
+            android:id="@+id/high_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="72sp"
+            app:layout_constraintBottom_toBottomOf="@+id/weather_icon"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintLeft_toLeftOf="@+id/horizontal_middle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/weather_icon"
+            tools:text="19\u00b0" />
+
+        <TextView
+            android:id="@+id/low_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/weather_description"
+            app:layout_constraintLeft_toLeftOf="@+id/high_temperature"
+            app:layout_constraintRight_toRightOf="@+id/high_temperature"
+            tools:text="10\u00b0" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
